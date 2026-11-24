@@ -34,7 +34,7 @@ The `fullcharge` structures include `I_loader` and `V_loader`; the `notfullcharg
 
 ## Data fields
 
-Common drive-cycle fields include `volt`, `current`, `Q`, `E`, `time`, and `soc`. Some dynamic records also contain `temp` and `ocv`. The `ocv` structures include `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis`, and corresponding `_ch` fields. Field names suggest voltage, current, time, state of charge, and charge/discharge quantities; their units, sign conventions, sampling rates, and the precise meanings of `Q` and `E` must be verified before use.
+Common drive-cycle fields include `volt`, `current`, `Q`, `E`, `time`, and `soc`. Some dynamic records also contain `temp` and `ocv`. The `ocv` structures include `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis`, and corresponding `_ch` fields. According to the dataset owner, `Q` is capacity and `E` is electric potential. The units, sign conventions, sampling rates, and charge/discharge conventions must be verified before use.
 
 Some records also contain `ocv1`, `volt_om`, `volt_nn`, `volt_p`, `R0`, `R1`, `R2`, `C1`, and `C2`. According to the dataset owner, `R0` is ohmic internal resistance, `R1` is polarization resistance, `C1` is polarization capacitance, and `volt_nn` is the voltage loss predicted by the neural network. These fields include parameters or quantities associated with a first-order RC model. Their availability varies by cell and test; the precise definitions of the remaining fields and their units require confirmation. The presence or construction of noise in individual records also remains to be established.
 
