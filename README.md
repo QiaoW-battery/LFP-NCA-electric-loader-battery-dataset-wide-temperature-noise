@@ -36,7 +36,7 @@ The `fullcharge` structures include `I_loader` and `V_loader`; the `notfullcharg
 
 Common drive-cycle fields include `volt`, `current`, `Q`, `E`, `time`, and `soc`. Some dynamic records also contain `temp` and `ocv`. The `ocv` structures include `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis`, and corresponding `_ch` fields. Field names suggest voltage, current, time, state of charge, and charge/discharge quantities; their units, sign conventions, sampling rates, and the precise meanings of `Q` and `E` must be verified before use.
 
-Some records also contain `ocv1`, `volt_om`, `volt_nn`, `volt_p`, `R0`, `R1`, `R2`, `C1`, and `C2`. Availability varies by cell and test. These fields should not be assumed to be direct measurements; their definitions and provenance require confirmation. The presence or construction of noise in individual records also remains to be established.
+Some records also contain `ocv1`, `volt_om`, `volt_nn`, `volt_p`, `R0`, `R1`, `R2`, `C1`, and `C2`. According to the dataset owner, `R0` is the ohmic internal resistance and `volt_nn` represents voltage loss. These fields include parameters or quantities associated with a first-order RC model, rather than necessarily being direct measurements. Their availability varies by cell and test; the precise definitions of the remaining fields and their units require confirmation. The presence or construction of noise in individual records also remains to be established.
 
 For example, MATLAB can access the I-type loader record under the `temp5` label in `cell_1`:
 
