@@ -45,6 +45,8 @@ Each cell also contains four dynamic-temperature structures:
 | `R0` | Ohmic internal resistance |
 | `R1` | Polarization resistance |
 | `C1` | Polarization capacitance |
+| `volt_om` | Ohmic voltage component |
+| `volt_p` | Polarization voltage component |
 | `volt_nn` | Voltage loss predicted by the neural network |
 
 Field availability varies by cell and test. OCV structures include charge and discharge fields such as `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis` and their `_ch` counterparts.
