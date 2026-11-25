@@ -49,7 +49,7 @@ Each cell also contains four dynamic-temperature structures:
 | `volt_p` | Polarization voltage component |
 | `volt_nn` | Equivalent circuit model (ECM) voltage error |
 
-Field availability varies by cell and test. OCV structures include charge and discharge fields such as `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis` and their `_ch` counterparts.
+OCV structures include charge and discharge fields such as `ocv_dis`, `Q_dis`, `soc_dis`, `current_dis`, `E_dis` and their `_ch` counterparts.
 
 ## Download
 
